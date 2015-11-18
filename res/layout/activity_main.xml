@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.nju.ics.btsona.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="110dp"
+        android:layout_marginLeft="26dp"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/button_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="54dp"
+        android:text="Stop" />
+
+    <TextView
+        android:id="@+id/LighterView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/button_stop"
+        android:layout_marginTop="88dp"
+        android:layout_toLeftOf="@+id/button_stop"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/DeepBreathView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LighterView"
+        android:layout_below="@+id/LighterView"
+        android:layout_marginTop="38dp"
+        android:text="TextView" />
+
+</RelativeLayout>
